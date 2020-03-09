@@ -4,14 +4,15 @@
 import smtplib
 from email.mime.text import MIMEText
 from email.header import Header
-import config as cfg
 
 
+cfg = None
 smtpObj = None
-def init():
+def init(config):
     print("Init email system...")
     try:
-        global smtpObj
+        global cfg,smtpObj
+        cfg = config
         smtpObj = smtplib.SMTP_SSL(cfg.SMTP_SERVER,cfg.SMTP_PORT)
         smtpObj.login(cfg.SENDER_ACCOUNT,cfg.SENDER_TOKEN)
         return True

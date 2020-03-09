@@ -1,0 +1,19 @@
+Init email system...
+Traceback (most recent call last):
+  File "listener.py", line 20, in <module>
+    log.info("[+] OK!")
+AttributeError: module 'log_utils' has no attribute 'info'
+Init email system...
+2020-03-10 06:51:25,945 - INFO  - [+] OK!
+[+] 邮件发送成功
+2020-03-10 06:51:27,354 - INFO  - [-] No stock
+Traceback (most recent call last):
+  File "listener.py", line 51, in <module>
+    if querytimes == cfg.SEND_SERVER_RUNNING_EMAIL_INTERVAL:
+NameError: name 'querytimes' is not defined
+Init email system...
+2020-03-10 06:52:00,122 - INFO  - [+] OK!
+[+] 邮件发送成功
+2020-03-10 06:52:01,420 - INFO  - [-] No stock
+2020-03-10 06:53:01,914 - INFO  - [-] No stock
+2020-03-10 06:54:02,464 - INFO  - [-] No stock
